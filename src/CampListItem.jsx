@@ -14,7 +14,7 @@ export default class CampListItem extends React.Component {
   }
 
   getMarker(title_match) {
-    let match_list = this.props.markers.filter(item =>
+    let match_list = this.props.gmapMarkers.filter(item =>
       item.get('title') === title_match
     )
     if (match_list) {
