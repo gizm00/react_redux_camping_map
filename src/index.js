@@ -167,8 +167,8 @@ function set_state(campgrounds) {
     markers: campgrounds,
     gmapMarkers: [],
     showingInfoWindow: "false",
-    activeMarker: "null",
-    selectedTitle: "thing"
+    activeMarker: null,
+    selectedTitle: ""
   }
  })
 }
