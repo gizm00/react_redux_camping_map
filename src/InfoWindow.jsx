@@ -6,7 +6,7 @@ export class InfoWindow extends React.Component {
   createMarkerObject(marker) {
     // create a google maps marker object to pass to the reducer
     let {
-      map, google, title, properties, description
+      map, google, title
     } = this.props;
 
     let lat = marker.get('position').first()
@@ -35,7 +35,7 @@ export class InfoWindow extends React.Component {
     if (!this.props.marker.position) {
       // need to convert marker into google maps marker object
       marker = this.props.gmapMarkers.filter(marker =>
-        marker.title == this.props.marker.get('title'))
+        marker.title === this.props.marker.get('title'))
       marker = marker.first()
     }
      this.infowindow
@@ -79,9 +79,10 @@ export class InfoWindow extends React.Component {
 
 
   renderInfoWindow() {
-    let {map, google} = this.props;
+    let {google} = this.props;
 
-    const iw = this.infowindow = new google.maps.InfoWindow({
+    //const iw =
+    this.infowindow = new google.maps.InfoWindow({
       content: ''
     });
   }

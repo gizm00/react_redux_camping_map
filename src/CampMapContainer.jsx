@@ -4,7 +4,6 @@ import GoogleApiComponent from './GoogleApiComponent'
 import CampMap from './CampMap'
 import {Marker} from './Marker'
 import {InfoWindow} from './InfoWindow'
-import CampList from './CampList'
 
 export class CampMapContainer extends React.Component {
   render() {
@@ -31,8 +30,7 @@ export class CampMapContainer extends React.Component {
               </div>
           </InfoWindow>
       </CampMap>
-      <br></br>
-      <CampList {...this.props}/>
+
       </div>
     )}
 }

@@ -30,7 +30,6 @@ function setState(state, newState) {
 
 function onMarkerClick(state, marker) {
 
-  console.log('markerClick in reducer')
   return state.merge(Map({
     'activeMarker': marker,
     'selectedTitle': marker.get('title'),

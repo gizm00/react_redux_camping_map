@@ -1,5 +1,4 @@
 import React from 'react';
-import {ButtonGroup} from 'react-bootstrap';
 import CampFilter from './CampFilter'
 
 export default class CampFilterList extends React.Component {

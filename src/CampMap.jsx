@@ -14,10 +14,6 @@ export default class CampMap extends React.Component {
    })
   }
 
-  componentDidMount() {
-    this.loadMap();
-  }
-
   componentDidUpdate(prevProps, prevState) {
     if (prevProps.google !== this.props.google) {
       this.loadMap();
@@ -28,8 +24,7 @@ export default class CampMap extends React.Component {
   // called after the component renders
   loadMap() {
     if (this.props && this.props.google) {
-      // google is available
-      console.log('prepping map')
+      // google is available\
       const {google} = this.props;
       const maps = google.maps;
 
@@ -49,7 +44,6 @@ export default class CampMap extends React.Component {
       })
 
       this.map = new maps.Map(node, mapConfig);
-      console.log("Setting map on " + this.map)
     }
 
   //
