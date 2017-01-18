@@ -5,7 +5,7 @@ export default class CampListItem extends React.Component {
     if (this.props.activeMarker !== prevProps.activeMarker) {
       let img_ref = this.refs.cg_image
       if (this.props.showingInfoWindow && (this.props.selectedTitle === this.props.title)) {
-        img_ref.style.border = "1px solid black"
+        img_ref.style.border = "3px solid black"
       }
       else {
         img_ref.style.border = null
